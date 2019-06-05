@@ -8,6 +8,6 @@ testCases.forEach((mathML, index) => {
 
     element.id = `test-case-${index + 1}`;
     element.innerHTML = mathML;
-    element.append(separation);
-    container.append(element);
+    element.appendChild(separation);
+    container.appendChild(element);
 });
