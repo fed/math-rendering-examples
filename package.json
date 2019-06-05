@@ -1,0 +1,19 @@
+{
+  "private": true,
+  "name": "mathml-examples",
+  "version": "0.0.0",
+  "description": "MathML rendering examples",
+  "main": "index.html",
+  "author": "Federico Knüssel <fknussel@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "mathjax": "^2.7.5"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.12.3"
+  }
+}
