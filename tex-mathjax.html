@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latex rendering with MathJax</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <p><a href="index.html">← Go back</a></p>
+        <h1>Latex rendered with MathJax</h1>
+        <div id="container"></div>
+        <div id="config" data-mml="false"></div>
+
+        <script type="text/x-mathjax-config">
+            MathJax.Hub.Config({
+                TeX: {
+                  extensions: ['AMSmath.js', 'AMSsymbols.js']
+                },
+                extensions: ['tex2jax.js'],
+                jax: ['input/TeX', 'output/HTML-CSS'],
+                'HTML-CSS': {
+                    fonts: ['TeX']
+                }
+            });
+        </script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
